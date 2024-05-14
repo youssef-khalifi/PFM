@@ -1,0 +1,31 @@
+img{
+  width: 250px;
+  height: 250px;
+}
+
+.container {  display: grid;
+  grid-template-columns: 3.5fr 0.1fr 0.9fr;
+  grid-template-rows: 3.1fr 0.2fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "cards . ss"
+    ". . ."
+    ". . .";
+
+  position: sticky;
+  top: 4px;
+  padding: 1px;
+}
+
+.ss { grid-area: ss;
+  margin-top: 1px;
+  margin-right: 40px;
+  width: 400px;
+  box-shadow: -22px -8px 47px -26px rgba(224,47,47,0.59);
+  -webkit-box-shadow: -22px -8px 47px -26px rgba(224,47,47,0.59);
+  -moz-box-shadow: -22px -8px 47px -26px rgba(224,47,47,0.59);
+  border: 1px solid #e0f7ff;
+  border-radius: 20px;
+  padding: 10px;
+}

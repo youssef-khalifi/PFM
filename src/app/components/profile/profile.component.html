@@ -1,0 +1,59 @@
+<div class="container bootstrap snippets bootdey">
+  <div class="panel-body inf-content">
+    <div class="row">
+      <div class="col-md-4">
+        <img alt="" style="width:600px;" title="" class="img-circle img-thumbnail isTooltip" src="{{user?.image}}" data-original-title="Usuario">
+        <ul title="Ratings" class="list-inline ratings text-center">
+          <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <strong>Information</strong><br>
+        <div class="table-responsive">
+          <table class="table table-user-information">
+            <tbody>
+            <tr>
+              <td>
+                <strong>
+                  <span class="bi bi-person-fill text-primary"></span>
+                  First Name
+                </strong>
+              </td>
+              <td class="text-primary">
+                {{ user?.firstName }}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>
+                  <span class="bi bi-person-fill text-primary"></span>
+                  Last Name
+                </strong>
+              </td>
+              <td class="text-primary">
+                {{ user?.lastName }}
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>
+                  <span class="bi bi-envelope text-primary"></span>
+                  Email
+                </strong>
+              </td>
+              <td class="text-primary">
+                {{ user?.email }}
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

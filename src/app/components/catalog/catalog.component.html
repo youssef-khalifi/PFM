@@ -1,0 +1,67 @@
+<div class="select">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" type="button" (click)="selectAll()">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" type="button" (click)="selectByCategory('Electronics')">Electronics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" type="button" (click)="selectByCategory('Fashion')">Fashion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" type="button" (click)="selectByCategory('Hobbies')">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" type="button" (click)="selectByCategory('Books')">Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" type="button" (click)="selectByCategory('Clothing')">Clothing</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<br>
+<br>
+<div class="all">
+  <div class="cards">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <div class="container">
+      <div class="row clearfix">
+
+        <div class="col-lg-3 col-md-4 col-sm-12" *ngFor="let p of products">
+          <div class="card product_item">
+            <div class="body" [ngClass]="{'stock': p.quantity < 10}">
+            <div class="cp_img">
+                <img src="{{p.image}}" alt="Product" class="img-fluid">
+                <div class="hover">
+                  <button  class="btn btn-primary btn-sm waves-effect">
+                    <i class="zmdi zmdi-eye" (click)="view(p)"></i></button>
+                  <button class="btn btn-primary btn-sm waves-effect" (click)="addToCart(p)">
+                    <i class="zmdi zmdi-shopping-cart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product_details">
+                <h5><a href="ec-product-detail.html">{{p.name}}</a></h5>
+                <ul class="product_price list-unstyled">
+                  <li class="old_price">{{p.price}}$</li>
+                  <li class="new_price">{{p.category}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detailss" *ngIf="details" id="detail">
+    <app-product-details  [product]="product"
+                          (add)="addToCart($event)"
+                          (close)="closeDetails()"></app-product-details>
+  </div>
+</div>

@@ -1,0 +1,418 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Iphone 14",
+      "category": "Electronics",
+      "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/l/d/ld0005977366_1.jpeg",
+      "price": 10500,
+      "quantity": 100,
+      "description": "This is a brand new Iphone 14 with 128GB ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S22",
+      "category": "Electronics",
+      "image": "https://www.marjanemall.ma/media/catalog/product/cache/36c9d346b6653f95ce7222f403adb694/t/2/t2_9_6_4_1_700x700_sam8806094019964_rw_sm-s901eidgmwd-samsung-s22-6-1-8-256gb-pink-gol.jpg",
+      "price": 9500,
+      "quantity": 80,
+      "description": "The latest Samsung Galaxy S22 with ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "name": "Sony PlayStation 5",
+      "category": "Electronics",
+      "image": "https://chronicle.durhamcollege.ca/wp-content/uploads/2021/01/ps5-photo.png",
+      "price": 500,
+      "quantity": 50,
+      "description": "Experience the next-gen gaming with Sony PlayStation 5 ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "name": "MacBook Pro",
+      "category": "Electronics",
+      "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/m/a/macbook-pro-2020-m1-gris-sideral-uno-maroc1_1.jpg",
+      "price": 2000,
+      "quantity": 30,
+      "description": "Powerful performance packed in sleek design ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "name": "Nike Air Max",
+      "category": "Fashion",
+      "image": "https://www.invog.ma/cdn/shop/products/nike_air_max_vente_invog.ma_800x.jpg?v=1553166930",
+      "price": 150,
+      "quantity": 200,
+      "description": "Comfort meets style with Nike Air Max ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "name": "Canon EOS Rebel T7",
+      "category": "Electronics",
+      "image": "https://m.media-amazon.com/images/I/71Is-Zv6A0L._AC_SL1500_.jpg",
+      "price": 600,
+      "quantity": 40,
+      "description": "Capture stunning photos with Canon EOS Rebel T7 ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "name": "Samsung 4K Smart TV",
+      "category": "Electronics",
+      "image": "https://tangerois.ma/18398-large_default/smart-tv-led-32-full-hd-samsung.jpg",
+      "price": 1200,
+      "quantity": 60,
+      "description": "Immerse yourself in entertainment with Samsung 4K Smart TV ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "name": "Fossil Gen 6 Smartwatch",
+      "category": "Electronics",
+      "image": "https://www.fossil.com/on/demandware.static/-/Library-Sites-FossilSharedLibrary/default/dw089b6bf0/evergreen/smartwatches/SU23/set_05082023_sw_lm_update_alexa/0508_Gen6_LearnMore_ALEXA_Mobile.jpg",
+      "price": 300,
+      "quantity": 150,
+      "description": "Stay connected and stylish with Fossil Gen 6 Smartwatch ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "9",
+      "name": "KitchenAid Stand Mixer",
+      "category": "Hobbies",
+      "image": "https://i5.walmartimages.com/asr/c4896652-42c0-45e6-8976-c88ad7bc328b.a157b3503961ca34f9315d1e9f63dcab.jpeg",
+      "price": 400,
+      "quantity": 20,
+      "description": "Effortlessly prepare delicious meals with KitchenAid Stand Mixer ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "10",
+      "name": "LEGO Star Wars Millennium Falcon",
+      "category": "Hobbies",
+      "image": "https://m.media-amazon.com/images/I/81kmuPJ9IOL._AC_SL1468_.jpg",
+      "price": 800,
+      "quantity": 10,
+      "description": "Build your own Millennium Falcon with LEGO Star Wars set ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "11",
+      "name": "Adidas Superstar Shoes",
+      "category": "Fashion",
+      "image": "https://assets.adidas.com/images/w_1880,f_auto,q_auto/15f901c90a9549d29104aae700d27efb_9366/EG4959_01_standard.jpg",
+      "price": 80,
+      "quantity": 50,
+      "description": "Iconic Adidas Superstar Shoes for casual style ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "12",
+      "name": "Gucci GG Marmont Bag",
+      "category": "Fashion",
+      "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1659974403/443496_DTDIT_1000_001_066_0000_Light-GG-Marmont-medium-shoulder-bag.jpg",
+      "price": 2000,
+      "quantity": 20,
+      "description": "Luxurious Gucci GG Marmont Bag for sophisticated look ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "13",
+      "name": "Ray-Ban Aviator Sunglasses",
+      "category": "Fashion",
+      "image": "https://cluxe.ma/wp-content/uploads/2023/09/img1.jpg",
+      "price": 150,
+      "quantity": 100,
+      "description": "Classic Ray-Ban Aviator Sunglasses for timeless appeal ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "14",
+      "name": "Zara Denim Jacket",
+      "category": "Fashion",
+      "image": "https://images-cdn.ubuy.co.in/6538937984374c56f60a8e2e-junge-denim-jacket-men-fleece-jacket.jpg",
+      "price": 70,
+      "quantity": 80,
+      "description": "Trendy Zara Denim Jacket for versatile styling ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "15",
+      "name": "Rolex Submariner Watch",
+      "category": "Fashion",
+      "image": "https://images.hbjo-online.com/webp/images/rolex/detail2/watch_assets_front_facing/m126610ln-0001_modelpage_front_facing_landscape.png",
+      "price": 10000,
+      "quantity": 10,
+      "description": "Exquisite Rolex Submariner Watch for elegance and precision ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "16",
+      "name": "The Great Gatsby",
+      "category": "Books",
+      "image": "https://i0.wp.com/americanwritersmuseum.org/wp-content/uploads/2018/02/CK-3.jpg?resize=267%2C400&ssl=1",
+      "price": 15,
+      "quantity": 30,
+      "description": "F. Scott Fitzgerald's masterpiece exploring the decadence of the Jazz Age ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "17",
+      "name": "To Kill a Mockingbird",
+      "category": "Books",
+      "image": "https://img1.od-cdn.com/ImageType-400/0211-1/%7B4FD7EF4F-B5AA-4C6A-85E7-C431E5A46496%7DIMG400.JPG",
+      "price": 12,
+      "quantity": 40,
+      "description": "Harper Lee's timeless classic addressing racial injustice in the American South ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "18",
+      "name": "1984",
+      "category": "Books",
+      "image": "https://booklinemaroc.com/wp-content/uploads/2022/06/1984.jpg",
+      "price": 10,
+      "quantity": 50,
+      "description": "George Orwell's dystopian novel depicting a totalitarian regime and the power of language ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "19",
+      "name": "The Lord of the Rings",
+      "category": "Books",
+      "image": "https://shop.royalarmouries.org/cdn/shop/files/The-lord-of-the-rings-boxed-set-specialedition_1024x1024.jpg?v=1709569861",
+      "price": 25,
+      "quantity": 20,
+      "description": "J.R.R. Tolkien's epic fantasy saga following the journey to destroy the One Ring ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    },
+    {
+      "id": "20",
+      "name": "Harry Potter and the Sorcerer's Stone",
+      "category": "Books",
+      "image": "https://target.scene7.com/is/image/Target/GUEST_955a7ffe-de6d-43ab-af34-a6f1501755dc?wid=488&hei=488&fmt=pjpeg",
+      "price": 18,
+      "quantity": 60,
+      "description": "J.K. Rowling's enchanting tale of a young wizard's journey into the magical world of Hogwarts ...",
+      "dateTime": "2024-05-13T12:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Khalifi",
+      "lastName": "youssef",
+      "email": "youssef@gmail.com",
+      "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+      "role": "User",
+      "password": "password"
+    },
+    {
+      "id": "2",
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "admin@gmail.com",
+      "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+      "role": "Admin",
+      "password": "password"
+    },
+    {
+      "id": "3",
+      "firstName": "bilal",
+      "lastName": "khalifi",
+      "email": "bilal@emial.com",
+      "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+      "role": "Admin",
+      "password": "12345"
+    },
+    {
+      "id": "199a",
+      "email": "bilal@emial.com",
+      "password": "12345"
+    },
+    {
+      "id": "efb4",
+      "email": "bilal@emial.com",
+      "password": "12345sss"
+    }
+  ],
+  "carts": [
+    {
+      "cartId": 1,
+      "cartItems": [
+        {
+          "cartItemId": 1,
+          "product": {
+            "productId": 1,
+            "productName": "Iphone 14",
+            "category": "Electronics",
+            "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/l/d/ld0005977366_1.jpeg",
+            "price": 10500,
+            "quantityAvailable": 100,
+            "description": "This is a brand new Iphone 14 with 128GB ..."
+          },
+          "quantity": 1
+        },
+        {
+          "cartItemId": 2,
+          "product": {
+            "productId": 2,
+            "productName": "Samsung Galaxy S22",
+            "category": "Electronics",
+            "image": "https://www.marjanemall.ma/media/catalog/product/cache/36c9d346b6653f95ce7222f403adb694/t/2/t2_9_6_4_1_700x700_sam8806094019964_rw_sm-s901eidgmwd-samsung-s22-6-1-8-256gb-pink-gol.jpg",
+            "price": 9500,
+            "quantityAvailable": 80,
+            "description": "The latest Samsung Galaxy S22 with ..."
+          },
+          "quantity": 2
+        }
+      ],
+      "user": {
+        "userId": 1,
+        "firstName": "Khalifi",
+        "lastName": "Youssef",
+        "email": "youssef@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "User"
+      },
+      "totalPrice": 29500,
+      "id": "4662"
+    },
+    {
+      "id": "f648",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": 1,
+            "name": "Iphone 14",
+            "category": "Electronics",
+            "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/l/d/ld0005977366_1.jpeg",
+            "price": 10500,
+            "quantity": 100,
+            "description": "This is a brand new Iphone 14 with 128GB ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 10500,
+      "user": {
+        "userID": 3,
+        "firstName": "bilal",
+        "lastName": "khalifi",
+        "email": "bilal@emial.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "password": "12345",
+        "role": "User"
+      }
+    },
+    {
+      "id": "88a5",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": 1,
+            "name": "Iphone 14",
+            "category": "Electronics",
+            "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/l/d/ld0005977366_1.jpeg",
+            "price": 10500,
+            "quantity": 100,
+            "description": "This is a brand new Iphone 14 with 128GB ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 4
+        }
+      ],
+      "totalPrice": 42000,
+      "user": {
+        "userID": 3,
+        "firstName": "bilal",
+        "lastName": "khalifi",
+        "email": "bilal@emial.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "password": "12345",
+        "role": "User"
+      }
+    },
+    {
+      "id": "882a",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "3",
+            "name": "Sony PlayStation 5",
+            "category": "Electronics",
+            "image": "https://chronicle.durhamcollege.ca/wp-content/uploads/2021/01/ps5-photo.png",
+            "price": 500,
+            "quantity": 50,
+            "description": "Experience the next-gen gaming with Sony PlayStation 5 ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 1000,
+      "user": {
+        "userID": 2,
+        "firstName": "admin",
+        "lastName": "admin",
+        "email": "admin@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "password": "password",
+        "role": "User"
+      }
+    },
+    {
+      "id": "c638",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "3",
+            "name": "Sony PlayStation 5",
+            "category": "Electronics",
+            "image": "https://chronicle.durhamcollege.ca/wp-content/uploads/2021/01/ps5-photo.png",
+            "price": 500,
+            "quantity": 50,
+            "description": "Experience the next-gen gaming with Sony PlayStation 5 ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 1000,
+      "user": {
+        "userID": 2,
+        "firstName": "admin",
+        "lastName": "admin",
+        "email": "admin@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "password": "password",
+        "role": "User"
+      }
+    }
+  ]
+}
