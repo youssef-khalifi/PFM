@@ -1,7 +1,7 @@
 import { Role } from './Role';
 import {Adresse} from "./Address";
 
-export class User {
+export class _User {
   private _userID: number;
   private _firstName: string;
   private _lastName: string;

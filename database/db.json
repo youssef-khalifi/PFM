@@ -209,7 +209,15 @@
       "email": "youssef@gmail.com",
       "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
       "role": "User",
-      "password": "password"
+      "password": "password",
+      "phoneNumber": "0617478157",
+      "adresse": {
+        "street": "Malabata NR 14",
+        "city": "Tanger",
+        "state": "Tanger-Tetouan-Houceima",
+        "postalCode": "12345",
+        "country": "Maroc"
+      }
     },
     {
       "id": "2",
@@ -218,7 +226,15 @@
       "email": "admin@gmail.com",
       "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
       "role": "Admin",
-      "password": "password"
+      "password": "password",
+      "phoneNumber": "234-567-8901",
+      "adresse": {
+        "street": "Hassan Rue Mohamadia",
+        "city": "Rabat",
+        "state": "Rabat-Kenitra",
+        "postalCode": "67890",
+        "country": "Maroc"
+      }
     },
     {
       "id": "3",
@@ -227,7 +243,15 @@
       "email": "bilal@emial.com",
       "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
       "role": "Admin",
-      "password": "12345"
+      "password": "12345",
+      "phoneNumber": "345-678-9012",
+      "adresse": {
+        "street": "Rue Massira NR 14",
+        "city": "Ksar el Kebir",
+        "state": "Tanger-Tetouan-Houceima",
+        "postalCode": "92150",
+        "country": "Maroc"
+      }
     }
   ],
   "carts": [
