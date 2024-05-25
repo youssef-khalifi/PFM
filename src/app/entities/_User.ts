@@ -1,8 +1,7 @@
-import {Role} from './Role';
+import { Role } from './Role';
+import {Adresse} from "./Address";
 
-export class _User{
-
-
+export class User {
   private _userID: number;
   private _firstName: string;
   private _lastName: string;
@@ -10,8 +9,20 @@ export class _User{
   private _image: string;
   private _password: string;
   private _role: Role;
+  private _adresse: Adresse;
+  private _phoneNumber: string;
 
-  constructor(userID: number, firstName: string, lastName: string, email: string, image: string, password: string, role: Role) {
+  constructor(
+    userID: number,
+    firstName: string,
+    lastName: string,
+    email: string,
+    image: string,
+    password: string,
+    role: Role,
+    adresse: Adresse,
+    phoneNumber: string
+  ) {
     this._userID = userID;
     this._firstName = firstName;
     this._lastName = lastName;
@@ -19,6 +30,8 @@ export class _User{
     this._image = image;
     this._password = password;
     this._role = role;
+    this._adresse = adresse;
+    this._phoneNumber = phoneNumber;
   }
 
   get userID(): number {
@@ -76,6 +89,20 @@ export class _User{
   set role(value: Role) {
     this._role = value;
   }
+
+  get adresse(): Adresse {
+    return this._adresse;
+  }
+
+  set adresse(value: Adresse) {
+    this._adresse = value;
+  }
+
+  get phoneNumber(): string {
+    return this._phoneNumber;
+  }
+
+  set phoneNumber(value: string) {
+    this._phoneNumber = value;
+  }
 }
-
-
