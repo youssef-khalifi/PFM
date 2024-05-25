@@ -228,16 +228,6 @@
       "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
       "role": "Admin",
       "password": "12345"
-    },
-    {
-      "id": "199a",
-      "email": "bilal@emial.com",
-      "password": "12345"
-    },
-    {
-      "id": "efb4",
-      "email": "bilal@emial.com",
-      "password": "12345sss"
     }
   ],
   "carts": [

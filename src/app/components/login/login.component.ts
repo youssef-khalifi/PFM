@@ -6,6 +6,7 @@ import {JsonPipe, NgIf} from "@angular/common";
 import {Credential} from "../../entities/Credential";
 import {RegisterComponent} from "../register/register.component";
 import {ToastrService} from "ngx-toastr";
+import {AuthService} from "../../service/auth.service";
 
 @Component({
   selector: 'app-login',
@@ -26,6 +27,7 @@ export class LoginComponent implements OnInit{
   credential: Credential = { email: '', password: '' };
   constructor(private route : Router,
               private service : UserService,
+              private authService : AuthService,
               private fb : FormBuilder,
               private toastr: ToastrService) {
   }
@@ -49,7 +51,7 @@ export class LoginComponent implements OnInit{
     this.credential.email = this.form.value.email
     this.credential.password = this.form.value.password
 
-    this.service.logIn(this.credential).subscribe({
+   /* this.service.logIn(this.credential).subscribe({
       next :()=>  {
         setTimeout(() => {
           this.route.navigateByUrl("/auth/catalog")
@@ -57,7 +59,19 @@ export class LoginComponent implements OnInit{
           this.showSuccess()
       },
       error: ()=> this.showError()
-    })
+    })*/
+
+   this.service.login(this.credential).subscribe(
+     {
+       next :()=>  {
+         setTimeout(() => {
+           this.route.navigateByUrl("/auth/catalog")
+         }, 4000);
+         this.showSuccess()
+       },
+       error: ()=> this.showError()
+     }
+   )
   }
 
   register() {

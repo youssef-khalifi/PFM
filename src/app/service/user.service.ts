@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {BehaviorSubject, map, Observable, of} from "rxjs";
+import {BehaviorSubject, catchError, map, Observable, of} from "rxjs";
 import {Product} from "../entities/Product";
 import {_User} from "../entities/_User";
 import {Credential} from "../entities/Credential";
@@ -11,7 +11,7 @@ import {Register} from "../entities/Register";
 })
 export class UserService {
 
-  private baseUrl = 'http://localhost:8080/user'; // Assuming your backend runs on localhost:8080
+  private baseUrl = 'http://localhost:3000/users'; // Assuming your backend runs on localhost:8080
 
   public user: _User | undefined ;
 
@@ -31,6 +31,24 @@ export class UserService {
         }))
         return user;
       }));
+  }
+  login(cred: Credential): Observable<_User> {
+    return this.getUserByEmail(cred.email).pipe(
+      map((user: _User | undefined) => {
+        if (!user) {
+          throw new Error('User not found');
+        }else if (cred.password != user.password){
+          throw new Error('User not found');
+        }else {
+          this.user = user;
+          localStorage.setItem("user" , JSON.stringify({
+            "email" : user.email , "password" :user.password
+          }))
+        }
+
+        return user;
+      })
+    );
   }
 
   public Register(request : Register): Observable<_User>{
@@ -52,5 +70,12 @@ export class UserService {
   public logOut() : Observable<boolean>{
     this.user = undefined
     return of(true)
+  }
+
+  getUserByEmail(email: string): Observable<_User | undefined> {
+    return this.http.get<_User[]>(`${this.baseUrl}?email=${email}`).pipe(
+      map((users: _User[]) => users.length > 0 ? users[0] : undefined),
+      catchError(() => of(undefined))
+    );
   }
 }
