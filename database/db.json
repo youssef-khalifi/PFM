@@ -227,7 +227,7 @@
       "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
       "role": "Admin",
       "password": "password",
-      "phoneNumber": "234-567-8901",
+      "phoneNumber": "0658930201",
       "adresse": {
         "street": "Hassan Rue Mohamadia",
         "city": "Rabat",
@@ -244,7 +244,7 @@
       "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
       "role": "Admin",
       "password": "12345",
-      "phoneNumber": "345-678-9012",
+      "phoneNumber": "0617589615",
       "adresse": {
         "street": "Rue Massira NR 14",
         "city": "Ksar el Kebir",
@@ -252,6 +252,14 @@
         "postalCode": "92150",
         "country": "Maroc"
       }
+    },
+    {
+      "id": "152b",
+      "firstName": "Ali",
+      "lastName": "Marte",
+      "email": "Ali@gmail.com",
+      "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+      "password": "12345"
     }
   ],
   "carts": [
@@ -426,6 +434,65 @@
         "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
         "password": "password",
         "role": "User"
+      }
+    },
+    {
+      "id": "ae9b",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "2",
+            "name": "Samsung Galaxy S22",
+            "category": "Electronics",
+            "image": "https://www.marjanemall.ma/media/catalog/product/cache/36c9d346b6653f95ce7222f403adb694/t/2/t2_9_6_4_1_700x700_sam8806094019964_rw_sm-s901eidgmwd-samsung-s22-6-1-8-256gb-pink-gol.jpg",
+            "price": 9500,
+            "quantity": 80,
+            "description": "The latest Samsung Galaxy S22 with ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        },
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "3",
+            "name": "Sony PlayStation 5",
+            "category": "Electronics",
+            "image": "https://chronicle.durhamcollege.ca/wp-content/uploads/2021/01/ps5-photo.png",
+            "price": 500,
+            "quantity": 50,
+            "description": "Experience the next-gen gaming with Sony PlayStation 5 ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 10000,
+      "user": {
+        "id": "3",
+        "firstName": "bilal",
+        "lastName": "khalifi",
+        "email": "bilal@emial.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "Admin",
+        "password": "12345",
+        "phoneNumber": "345-678-9012",
+        "adresse": {
+          "street": "Rue Massira NR 14",
+          "city": "Ksar el Kebir",
+          "state": "Tanger-Tetouan-Houceima",
+          "postalCode": "92150",
+          "country": "Maroc"
+        }
       }
     }
   ]
