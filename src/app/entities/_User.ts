@@ -2,7 +2,7 @@ import { Role } from './Role';
 import {Adresse} from "./Address";
 
 export class _User {
-  private _userID: number;
+  private _id: string;
   private _firstName: string;
   private _lastName: string;
   private _email: string;
@@ -13,7 +13,7 @@ export class _User {
   private _phoneNumber: string;
 
   constructor(
-    userID: number,
+    userID: string,
     firstName: string,
     lastName: string,
     email: string,
@@ -23,7 +23,7 @@ export class _User {
     adresse: Adresse,
     phoneNumber: string
   ) {
-    this._userID = userID;
+    this._id = userID;
     this._firstName = firstName;
     this._lastName = lastName;
     this._email = email;
@@ -34,12 +34,12 @@ export class _User {
     this._phoneNumber = phoneNumber;
   }
 
-  get userID(): number {
-    return this._userID;
+  get id(): string {
+    return this._id;
   }
 
-  set userID(value: number) {
-    this._userID = value;
+  set id(value: string) {
+    this._id = value;
   }
 
   get firstName(): string {

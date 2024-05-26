@@ -19,23 +19,23 @@
       <div class="card mb-4">
         <div class="card-header">Account Details</div>
         <div class="card-body">
-          <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <!-- Form Group (username)-->
             <div class="mb-3">
               <label class="small mb-1" >Email</label>
-              <input [ngModel]="user?.email" name="email" type="text" class="form-control"  placeholder="Enter your Email" required>
+              <input formControlName="email" id="email" name="email" type="text" class="form-control"  placeholder="Enter your Email" >
             </div>
             <!-- Form Row-->
             <div class="row gx-3 mb-3">
               <!-- Form Group (first name)-->
               <div class="col-md-6">
                 <label class="small mb-1" >First Name</label>
-                <input [ngModel]="user?.firstName" name="firstname" type="text" class="form-control" placeholder="Enter your First Name" required>
+                <input formControlName="firstName" name="firstName" type="text" class="form-control" placeholder="Enter your First Name" >
               </div>
               <!-- Form Group (last name)-->
               <div class="col-md-6">
                 <label class="small mb-1" >Last Name</label>
-                <input [ngModel]="user?.lastName" name="lastname" type="text" class="form-control" placeholder="Enter your Last Name" required>
+                <input formControlName="lastName" name="lastName" type="text" class="form-control" placeholder="Enter your Last Name" >
               </div>
             </div>
             <!-- Form Row        -->
@@ -43,38 +43,38 @@
               <!-- Form Group (organization name)-->
               <div class="col-md-6">
                 <label class="small mb-1" >Phone Number</label>
-                <input [ngModel]="user?.phoneNumber" name="phoneNumber" type="text" class="form-control" placeholder="Enter your Phone Number" required>
+                <input formControlName="phoneNumber" name="phoneNumber" type="text" class="form-control" placeholder="Enter your Phone Number" >
               </div>
               <!-- Form Group (location)-->
               <div class="col-md-6">
                 <label class="small mb-1" >City</label>
-                <input [ngModel]="user?.adresse?.city" name="city" type="text" class="form-control" placeholder="Enter your City" required>
+                <input formControlName="city" name="city" type="text" class="form-control" placeholder="Enter your City" >
               </div>
             </div>
             <!-- Form Group (email address)-->
             <div class="mb-3">
               <label class="small mb-1" >State</label>
-              <input [ngModel]="user?.adresse?.state" name="state" type="text" class="form-control" placeholder="Enter your State" required>
+              <input formControlName="state" name="state" type="text" class="form-control" placeholder="Enter your State" >
             </div>
             <!-- Form Row-->
             <div class="row gx-3 mb-3">
               <!-- Form Group (phone number)-->
               <div class="col-md-6">
                 <label class="small mb-1" >Country</label>
-                <input [ngModel]="user?.adresse?.country" name="country" type="text" class="form-control" placeholder="Enter your Country" required>
+                <input formControlName="country" name="country" type="text" class="form-control" placeholder="Enter your Country" >
               </div>
               <!-- Form Group (birthday)-->
               <div class="col-md-6">
                 <label class="small mb-1" >Postal Code</label>
-                <input [ngModel]="user?.adresse?.postalCode" name="postalcode" type="text" class="form-control" placeholder="Enter your Postal Code" required>
+                <input formControlName="postalCode" name="postalCode" type="text" class="form-control" placeholder="Enter your Postal Code" >
               </div>
               <div class="mb-3">
               <label class="small mb-1" >Street</label>
-              <input [ngModel]="user?.adresse?.street" name="street" type="text" class="form-control" placeholder="Enter your Street" required>
+              <input formControlName="street" name="street" type="text" class="form-control" placeholder="Enter your Street" >
             </div>
             </div>
             <!-- Save changes button-->
-            <button class="btn btn-primary" type="submit">Save changes</button>
+            <button class="btn btn-primary" type="submit" [disabled]="!form.valid || form.pristine">Save changes</button>
           </form>
         </div>
       </div>

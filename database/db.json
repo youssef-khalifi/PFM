@@ -204,18 +204,18 @@
   "users": [
     {
       "id": "1",
-      "firstName": "Khalifi",
-      "lastName": "youssef",
-      "email": "youssef@gmail.com",
+      "firstName": "youssef",
+      "lastName": "khalifi",
+      "email": "youssefkhalifi767@gmail.com",
       "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
-      "role": "User",
-      "password": "password",
+      "role": "Admin",
+      "password": "12345",
       "phoneNumber": "0617478157",
       "adresse": {
-        "street": "Malabata NR 14",
-        "city": "Tanger",
-        "state": "Tanger-Tetouan-Houceima",
-        "postalCode": "12345",
+        "street": "KSAR EL KEBIR HAY MARCHE VERTE RUE JEDDA NR 14",
+        "city": "KSAR EL KEBIR",
+        "state": "Tangier",
+        "postalCode": "99350",
         "country": "Maroc"
       }
     },
@@ -240,26 +240,18 @@
       "id": "3",
       "firstName": "bilal",
       "lastName": "khalifi",
-      "email": "bilal@emial.com",
+      "email": "bilal@email.com",
       "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
       "role": "Admin",
       "password": "12345",
-      "phoneNumber": "0617589615",
+      "phoneNumber": "0617478157",
       "adresse": {
         "street": "Rue Massira NR 14",
-        "city": "Ksar el Kebir",
+        "city": "Casablanca",
         "state": "Tanger-Tetouan-Houceima",
         "postalCode": "92150",
         "country": "Maroc"
       }
-    },
-    {
-      "id": "152b",
-      "firstName": "Ali",
-      "lastName": "Marte",
-      "email": "Ali@gmail.com",
-      "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
-      "password": "12345"
     }
   ],
   "carts": [

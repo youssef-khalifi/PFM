@@ -21,17 +21,6 @@ export class UserService {
     return this.http.get<_User[]>(this.baseUrl);
   }
 
-  public logIn(credentials : Credential): Observable<_User>{
-    return this.http
-      .post<_User>(`${this.baseUrl}/auth`, credentials)
-      .pipe(map((user: _User) => {
-        this.user = user;
-        localStorage.setItem("user" , JSON.stringify({
-          "email" : user.email , "password" :user.password
-        }))
-        return user;
-      }));
-  }
   login(cred: Credential): Observable<_User> {
     return this.getUserByEmail(cred.email).pipe(
       map((user: _User | undefined) => {
@@ -55,6 +44,19 @@ export class UserService {
     return this.http
       .post<_User>(`${this.baseUrl}`, request)
       .pipe(map((user: _User) => {
+        return user;
+      }));
+  }
+
+  public update(userData: _User | undefined): Observable<_User> {
+
+    return this.http
+      .put<_User>(`${this.baseUrl}/${userData?.id}`, userData)
+      .pipe(map((user: _User) => {
+        // Update local user if it is the current user
+        if (this.user && this.user.id === userData?.id) {
+          this.user = user;
+        }
         return user;
       }));
   }
