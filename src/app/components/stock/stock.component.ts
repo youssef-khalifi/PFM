@@ -3,12 +3,14 @@ import {ProductService} from "../../service/product.service";
 import {Product} from "../../entities/Product";
 import {NgForOf} from "@angular/common";
 import {map} from "rxjs";
+import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-stock',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    FormsModule
   ],
   templateUrl: './stock.component.html',
   styleUrl: './stock.component.css'
@@ -69,5 +71,26 @@ export class StockComponent implements OnInit{
     }
 
 
+  }
+
+  Edit(p : Product) {
+
+      console.log(p)
+  }
+
+  public searchEmployees(key: string): void {
+    console.log(key);
+    const results: Product[] = [];
+    for (const p of this.products) {
+      if (p.name.toLowerCase().indexOf(key.toLowerCase()) !== -1
+        || p.category.toLowerCase().indexOf(key.toLowerCase()) !== -1
+        || p.description.toLowerCase().indexOf(key.toLowerCase()) !== -1){
+        results.push(p);
+      }
+    }
+    this.products = results;
+    if (results.length === 0 || !key) {
+      this.getAll();
+    }
   }
 }
