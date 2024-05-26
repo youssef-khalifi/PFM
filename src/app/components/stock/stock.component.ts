@@ -4,6 +4,7 @@ import {Product} from "../../entities/Product";
 import {NgForOf} from "@angular/common";
 import {map} from "rxjs";
 import {FormsModule} from "@angular/forms";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-stock',
@@ -24,7 +25,8 @@ export class StockComponent implements OnInit{
     }
 
     constructor(private service : ProductService,
-                private productService : ProductService) {
+                private productService : ProductService,
+                private route : Router) {
     }
 
 
@@ -75,7 +77,7 @@ export class StockComponent implements OnInit{
 
   Edit(p : Product) {
 
-      console.log(p)
+    this.route.navigate(['/auth/stock-details'], { queryParams: { id: p.id } });
   }
 
   public searchEmployees(key: string): void {

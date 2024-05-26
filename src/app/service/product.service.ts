@@ -25,4 +25,14 @@ export class ProductService {
       map(products => products.filter(product => product.quantity <= minQuantity))
     );
   }
+
+  getProductById(id: number): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Product>(url);
+  }
+  updateProduct(product: Product): Observable<Product> {
+    const url = `${this.baseUrl}/${product.id}`;
+    return this.http.put<Product>(url, product);
+  }
+
 }
