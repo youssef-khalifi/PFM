@@ -19,4 +19,10 @@ export class ProductService {
       map(products => products.filter(product => product.category === category))
     );
   }
+
+  getByQuantity(minQuantity: number): Observable<Product[]> {
+    return this.getAllProducts().pipe(
+      map(products => products.filter(product => product.quantity <= minQuantity))
+    );
+  }
 }

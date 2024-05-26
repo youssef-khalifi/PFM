@@ -6,6 +6,7 @@ import {CartComponent} from "./components/cart/cart.component";
 import {AuthTempComponent} from "./components/auth-temp/auth-temp.component";
 import {AuthGuard} from "./guards/auth.guard";
 import {ProfileComponent} from "./components/profile/profile.component";
+import {StockComponent} from "./components/stock/stock.component";
 
 export const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -15,5 +16,6 @@ export const routes: Routes = [
       { path: 'catalog', component: CatalogComponent },
       { path: 'cart', component: CartComponent },
       { path: 'profile', component: ProfileComponent },
+      { path: 'stock', component: StockComponent },
     ] },
 ];
