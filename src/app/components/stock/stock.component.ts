@@ -105,12 +105,17 @@ export class StockComponent implements OnInit{
   }
 
   delete(p: Product) {
-    this.productService.deleteProduct(p.id)
-
-    setTimeout(() => {
-      this.route.navigateByUrl("/auth/stock")
-    }, 2000);
-    this.showSuccess()
+    this.productService.deleteProduct(p).subscribe(
+      {
+        next :()=>  {
+          setTimeout(() => {
+            this.route.navigateByUrl("/auth/catalog")
+          }, 4000);
+          this.showSuccess()
+        },
+        error: ()=> this.showError()
+      })
+    console.log(p)
 
   }
 
