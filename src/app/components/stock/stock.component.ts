@@ -118,4 +118,8 @@ export class StockComponent implements OnInit{
     )
 
   }
+
+  addProduct() {
+    this.route.navigateByUrl('/auth/stock-form');
+  }
 }
