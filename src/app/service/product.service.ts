@@ -38,5 +38,8 @@ export class ProductService {
     const url = `${this.baseUrl}/${productId}`;
     return this.http.delete<void>(url);
   }
+  saveProduct(product: Product): Observable<Product> {
+    return this.http.post<Product>(this.baseUrl, product);
+  }
 
 }
