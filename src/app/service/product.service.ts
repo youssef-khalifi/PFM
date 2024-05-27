@@ -1,7 +1,8 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {map, Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 import {Product} from "../entities/Product";
+import {randomInt} from "node:crypto";
 
 @Injectable({
   providedIn: 'root'
@@ -40,6 +41,9 @@ export class ProductService {
   }
   saveProduct(product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, product);
+  }
+  private generateRandomId(): number {
+    return Math.floor(Math.random() * 1000) + 1;
   }
 
 }

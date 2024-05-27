@@ -109,8 +109,9 @@ export class StockComponent implements OnInit{
       {
         next :()=>  {
           setTimeout(() => {
-            this.route.navigateByUrl("/auth/catalog")
-          }, 4000);
+            this.route.navigateByUrl("/auth/stock")
+            this.getAll()
+          }, 2000);
           this.showSuccess()
         },
         error: ()=> this.showError()
