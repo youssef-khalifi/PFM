@@ -6,6 +6,9 @@ import {CartComponent} from "./components/cart/cart.component";
 import {AuthTempComponent} from "./components/auth-temp/auth-temp.component";
 import {AuthGuard} from "./guards/auth.guard";
 import {ProfileComponent} from "./components/profile/profile.component";
+import {StockComponent} from "./components/stock/stock.component";
+import {StockDetailsComponent} from "./components/stock-details/stock-details.component";
+import {StockAddProductComponent} from "./components/stock-add-product/stock-add-product.component";
 
 export const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -15,5 +18,8 @@ export const routes: Routes = [
       { path: 'catalog', component: CatalogComponent },
       { path: 'cart', component: CartComponent },
       { path: 'profile', component: ProfileComponent },
+      { path: 'stock', component: StockComponent },
+      { path: 'stock-details', component: StockDetailsComponent },
+      { path: 'stock-form', component: StockAddProductComponent },
     ] },
 ];

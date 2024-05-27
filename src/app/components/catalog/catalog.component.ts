@@ -46,7 +46,6 @@ export class CatalogComponent  implements OnInit{
   public addToCart(p :Product){
     this.cartService.addToCart(p);
     console.log(this.cartService.getCart())
-    console.log("hhh")
   }
   public closeDetails(){
     this.details = false;

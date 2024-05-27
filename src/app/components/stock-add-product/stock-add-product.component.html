@@ -1,0 +1,84 @@
+<div class="container-fluid">
+
+  <div class="container">
+    <!-- Title -->
+    <div class="d-flex justify-content-between align-items-lg-center py-3 flex-column flex-lg-row">
+      <h2 class="h5 mb-3 mb-lg-0">Create new Product</h2>
+      <div class="hstack gap-3">
+        <button class="btn btn-light btn-sm btn-icon-text" routerLink="/auth/stock"><i class="bi bi-x"></i> <span class="text">Cancel</span></button>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <form class="row"  [formGroup]="form" (ngSubmit)="save()">
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="h6 mb-4">Product informations</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" formControlName="name"  name="name" placeholder="Enter Product Name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label class="form-label">Price</label>
+                  <input type="number" class="form-control"  formControlName="price"  name="price" placeholder="Enter Product Price">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label class="form-label">Date</label>
+                  <input type="date" class="form-control"  formControlName="dateTime"  name="dateTime" >
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label class="form-label">Quantity</label>
+                  <input type="number" formControlName="quantity"  name="quantity" placeholder="Enter Product Quantity" class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right side -->
+      <div class="col-lg-4">
+        <!-- Status -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="h6">Category</h3>
+            <select class="form-select" id="category" name="category" formControlName="category">
+              <option  value="" selected>Category</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Fashion">Fashion</option>
+              <option value="Hobbies">Hobbies</option>
+              <option value="Books">Books</option>
+              <option value="Clothing">Clothing</option>
+            </select>
+          </div>
+        </div>
+        <!-- Avatar -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="h6">Picture</h3>
+            <input class="form-control" type="text" formControlName="image"  name="image" placeholder="Enter Product Picture">
+          </div>
+        </div>
+        <!-- Notes -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="h6">Description</h3>
+            <textarea class="form-control" rows="3" formControlName="description"  name="description" placeholder="Enter Product Description"></textarea>
+          </div>
+        </div>
+      </div>
+      <button type="submit"  class="btn btn-info" [disabled]="form.invalid">Submit</button>
+    </form>
+  </div>
+
+</div>
