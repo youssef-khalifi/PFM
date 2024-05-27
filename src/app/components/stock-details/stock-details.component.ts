@@ -55,7 +55,7 @@ export class StockDetailsComponent implements OnInit {
   }
 
   getById(): void {
-    this.service.getProductById(Number(this.productId)).subscribe(
+    this.service.getProductById(this.productId).subscribe(
       (data) => {
         this.product = data;
         this.initializeForm();

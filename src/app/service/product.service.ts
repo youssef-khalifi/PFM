@@ -27,7 +27,7 @@ export class ProductService {
     );
   }
 
-  getProductById(id: number): Observable<Product> {
+  getProductById(id: string | null): Observable<Product> {
     const url = `${this.baseUrl}/${id}`;
     return this.http.get<Product>(url);
   }
@@ -41,9 +41,6 @@ export class ProductService {
   }
   saveProduct(product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, product);
-  }
-  private generateRandomId(): number {
-    return Math.floor(Math.random() * 1000) + 1;
   }
 
 }
