@@ -5,6 +5,7 @@ import {NgForOf} from "@angular/common";
 import {map} from "rxjs";
 import {FormsModule} from "@angular/forms";
 import {Router} from "@angular/router";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-stock',
@@ -26,10 +27,17 @@ export class StockComponent implements OnInit{
 
     constructor(private service : ProductService,
                 private productService : ProductService,
-                private route : Router) {
+                private route : Router,
+                private toastr: ToastrService) {
     }
 
 
+  showSuccess() {
+    this.toastr.success('Product Deleted successfully!', 'Success');
+  }
+  showError() {
+    this.toastr.error('Try Again!', 'Error'); // Show a success notification
+  }
   public getAll(){
     this.service.getAllProducts().subscribe(value => this.products = value)
   }
@@ -94,5 +102,20 @@ export class StockComponent implements OnInit{
     if (results.length === 0 || !key) {
       this.getAll();
     }
+  }
+
+  delete(p: Product) {
+    this.productService.deleteProduct(p.id).subscribe(
+      {
+        next :()=>  {
+          setTimeout(() => {
+            this.route.navigateByUrl("/auth/stock")
+          }, 2000);
+          this.showSuccess()
+        },
+        error: ()=> this.showError()
+      }
+    )
+
   }
 }
