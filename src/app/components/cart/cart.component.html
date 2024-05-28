@@ -66,12 +66,63 @@
                     <h5>{{ cart.totalPrice}} $</h5>
                   </div>
 
-                  <button type="button" class="btn btn-dark btn-block btn-lg" (click)="saveCart()"
-                          data-mdb-ripple-color="dark">Pay</button>
 
                 </div>
               </div>
             </div>
+            <!-- Address -->
+            <div class="card mb-4">
+              <form class="card-body" [formGroup]="form" (ngSubmit)="saveAndContinue()" >
+                <br>
+                <h3 class="h6 mb-4">Address</h3>
+                <div class="mb-3">
+                  <label class="form-label">Street</label>
+                  <input type="text" class="form-control" formControlName="street"  name="street" placeholder="Type Your Street">
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">Country</label>
+                      <select class="select2 form-control select2-hidden-accessible"
+                              aria-hidden="true" formControlName="country"  name="country" >
+                        <option selected value="Morocco">Morocco</option>
+                        <option value="USA">USA</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="France">France</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Spain">Spain</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">State</label>
+                      <input type="text" class="form-control" formControlName="state"  name="state" placeholder="Type Your State">
+                       </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">City</label>
+                      <input type="text" class="form-control" formControlName="city"  name="city" placeholder="Type Your City">
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3">
+                      <label class="form-label">ZIP code</label>
+                      <input type="text" class="form-control" formControlName="postalCode"  name="postalCode" placeholder="Type Your City PostalCode">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <button type="submit" class="btn btn-outline-info btn-block btn-lg" (click)="saveAndContinue()"
+                    data-mdb-ripple-color="dark">Use My Address & Continue</button>
+            <button type="button" [disabled]="!form.valid || form.pristine" class="btn btn-outline-info btn-block btn-lg" (click)="Next()"
+                    data-mdb-ripple-color="dark">Next</button>
+            <br><br>
           </div>
         </div>
       </div>

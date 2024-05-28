@@ -9,6 +9,7 @@ import {ProfileComponent} from "./components/profile/profile.component";
 import {StockComponent} from "./components/stock/stock.component";
 import {StockDetailsComponent} from "./components/stock-details/stock-details.component";
 import {StockAddProductComponent} from "./components/stock-add-product/stock-add-product.component";
+import {CartDetailsComponent} from "./components/cart-details/cart-details.component";
 
 export const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -17,6 +18,7 @@ export const routes: Routes = [
     children :[
       { path: 'catalog', component: CatalogComponent },
       { path: 'cart', component: CartComponent },
+      { path: 'cart-details', component: CartDetailsComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'stock', component: StockComponent },
       { path: 'stock-details', component: StockDetailsComponent },

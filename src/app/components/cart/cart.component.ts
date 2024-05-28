@@ -2,16 +2,19 @@ import {Component, OnInit} from '@angular/core';
 import {CartService} from "../../service/cart.service";
 import {Cart} from "../../entities/Cart";
 import {NgForOf} from "@angular/common";
-import {RouterLink} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import {CartItem} from "../../entities/CartItem";
 import {UserService} from "../../service/user.service";
+import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-cart',
   standalone: true,
   imports: [
     NgForOf,
-    RouterLink
+    RouterLink,
+    ReactiveFormsModule
   ],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
@@ -19,7 +22,23 @@ import {UserService} from "../../service/user.service";
 export class CartComponent implements OnInit{
 
   cart : Cart = new Cart();
-  constructor(private service : CartService,private userService : UserService) {
+  form! : FormGroup;
+  constructor(private service : CartService,
+              private userService : UserService,
+              private  route : Router,
+              private fb : FormBuilder,
+              private toastr: ToastrService) {
+  }
+
+
+  showSuccess() {
+    this.toastr.success('Your Command Successfully Saved!', 'Success'); // Show a success notification
+  }
+  showWarning() {
+    this.toastr.success('You should select some product!', 'Success'); // Show a success notification
+  }
+  showError() {
+    this.toastr.error('Try Again!', 'Error'); // Show a success notification
   }
 
   ngOnInit(): void {
@@ -29,6 +48,14 @@ export class CartComponent implements OnInit{
         console.log(data)
       }
     )
+
+    this.form = this.fb.group({
+      street: ['', [Validators.required]],
+      city: ['', Validators.required],
+      state: ['', Validators.required],
+      postalCode: ['', Validators.required],
+      country: ['', Validators.required],
+    });
     }
 
   public getCart(){
@@ -44,10 +71,32 @@ export class CartComponent implements OnInit{
     }
   }
 
-  public saveCart(){
+  public Next(){
     this.cart.user = this.userService.user
-    this.service.saveCart(this.service.cart).subscribe(value =>
-    console.log(value))
+    this.cart.address = this.form.value
+
+    if (this.cart.totalPrice == 0){
+      this.showWarning()
+    }else {
+      setTimeout(() => {
+        this.route.navigateByUrl("/auth/cart-details")
+      }, 2000);
+      this.showSuccess()
+    }
   }
+
+  saveAndContinue() {
+    this.cart.user = this.userService.user
+    this.cart.address = this.userService.user?.adresse
+
+    if (this.cart.totalPrice == 0){
+      this.showWarning()
+    }else {
+      setTimeout(() => {
+        this.route.navigateByUrl("/auth/cart-details")
+      }, 2000);
+      this.showSuccess()
+    }
+    }
 
 }

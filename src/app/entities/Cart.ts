@@ -1,15 +1,17 @@
 import { CartItem } from './CartItem';
 import { _User } from './_User';
+import {Adresse} from "./Address";
 
 export class Cart {
   cartId!: number;
   cartItems: CartItem[] = [];
   user!: _User | undefined;
   totalPrice: number = 0.0;
+  address: Adresse | undefined;
+  date! : string
 
   constructor() {
   }
-
   public addItem(shoppingCartItem: CartItem){
     let elem : CartItem | undefined = this.cartItems.find(x => x.product.id == shoppingCartItem.product.id)
 

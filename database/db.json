@@ -568,6 +568,204 @@
           "country": "Maroc"
         }
       }
+    },
+    {
+      "id": "bc10",
+      "cartItems": [],
+      "totalPrice": 0,
+      "user": {
+        "id": "3",
+        "firstName": "bilal",
+        "lastName": "khalifi",
+        "email": "bilal@email.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "USER",
+        "password": "12345",
+        "phoneNumber": "0617478157",
+        "adresse": {
+          "street": "Rue Massira NR 14",
+          "city": "Casablanca",
+          "state": "Tanger-Tetouan-Houceima",
+          "postalCode": "92150",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "Rue Massira NR 14",
+        "city": "Casablanca",
+        "state": "Tanger-Tetouan-Houceima",
+        "postalCode": "92150",
+        "country": "Maroc"
+      }
+    },
+    {
+      "id": "3552",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "2",
+            "name": "Samsung Galaxy S22",
+            "category": "Electronics",
+            "image": "https://www.marjanemall.ma/media/catalog/product/cache/36c9d346b6653f95ce7222f403adb694/t/2/t2_9_6_4_1_700x700_sam8806094019964_rw_sm-s901eidgmwd-samsung-s22-6-1-8-256gb-pink-gol.jpg",
+            "price": 9500,
+            "quantity": 80,
+            "description": "The latest Samsung Galaxy S22 with ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        },
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "1",
+            "name": "Iphone 14",
+            "category": "Electronics",
+            "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/l/d/ld0005977366_1.jpeg",
+            "price": 10500,
+            "quantity": 3,
+            "description": "This is a brand new Iphone 14 with 128GB ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 20000,
+      "user": {
+        "id": "3",
+        "firstName": "bilal",
+        "lastName": "khalifi",
+        "email": "bilal@email.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "USER",
+        "password": "12345",
+        "phoneNumber": "0617478157",
+        "adresse": {
+          "street": "Rue Massira NR 14",
+          "city": "Casablanca",
+          "state": "Tanger-Tetouan-Houceima",
+          "postalCode": "92150",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "KSAR EL KEBIR HAY MARCHE VERTE RUE JEDDA NR 14",
+        "city": "KSAR EL KEBIR",
+        "state": "Tangier",
+        "postalCode": "99350",
+        "country": "Morocco"
+      }
+    },
+    {
+      "id": "2971",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "1",
+            "name": "Iphone 14",
+            "category": "Electronics",
+            "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/l/d/ld0005977366_1.jpeg",
+            "price": 10500,
+            "quantity": 3,
+            "description": "This is a brand new Iphone 14 with 128GB ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        },
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "2",
+            "name": "Samsung Galaxy S22",
+            "category": "Electronics",
+            "image": "https://www.marjanemall.ma/media/catalog/product/cache/36c9d346b6653f95ce7222f403adb694/t/2/t2_9_6_4_1_700x700_sam8806094019964_rw_sm-s901eidgmwd-samsung-s22-6-1-8-256gb-pink-gol.jpg",
+            "price": 9500,
+            "quantity": 80,
+            "description": "The latest Samsung Galaxy S22 with ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        },
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "3",
+            "name": "Sony PlayStation 5",
+            "category": "Electronics",
+            "image": "https://chronicle.durhamcollege.ca/wp-content/uploads/2021/01/ps5-photo.png",
+            "price": 500,
+            "quantity": 50,
+            "description": "Experience the next-gen gaming with Sony PlayStation 5 ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        },
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "4",
+            "name": "MacBook Pro",
+            "category": "Electronics",
+            "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/m/a/macbook-pro-2020-m1-gris-sideral-uno-maroc1_1.jpg",
+            "price": 2000,
+            "quantity": 30,
+            "description": "Powerful performance packed in sleek design ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 22500,
+      "date": "1716915332299",
+      "user": {
+        "id": "3",
+        "firstName": "bilal",
+        "lastName": "khalifi",
+        "email": "bilal@email.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "USER",
+        "password": "12345",
+        "phoneNumber": "0617478157",
+        "adresse": {
+          "street": "Rue Massira NR 14",
+          "city": "Casablanca",
+          "state": "Tanger-Tetouan-Houceima",
+          "postalCode": "92150",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "Rue Massira NR 14",
+        "city": "Casablanca",
+        "state": "Tanger-Tetouan-Houceima",
+        "postalCode": "92150",
+        "country": "Maroc"
+      }
     }
   ]
 }
