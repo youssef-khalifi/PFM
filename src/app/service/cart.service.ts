@@ -23,7 +23,6 @@ export class CartService {
   }
 
   public saveCart(cart : Cart) : Observable<Cart>{
-    cart.date = new Date().toISOString();
     return this.http.post<Cart>(this.baseUrl , cart);
   }
   public addToCart(p : Product){

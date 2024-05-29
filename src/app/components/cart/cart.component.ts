@@ -48,6 +48,7 @@ export class CartComponent implements OnInit{
         console.log(data)
       }
     )
+    this.cart.date = new Date().toISOString();
 
     this.form = this.fb.group({
       street: ['', [Validators.required]],

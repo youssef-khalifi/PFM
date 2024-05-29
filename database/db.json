@@ -815,6 +815,73 @@
         "postalCode": "92150",
         "country": "Maroc"
       }
+    },
+    {
+      "id": "037b",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "3",
+            "name": "Sony PlayStation 5",
+            "category": "Electronics",
+            "image": "https://chronicle.durhamcollege.ca/wp-content/uploads/2021/01/ps5-photo.png",
+            "price": 500,
+            "quantity": 50,
+            "description": "Experience the next-gen gaming with Sony PlayStation 5 ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 2
+        },
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "16",
+            "name": "The Great Gatsby",
+            "category": "Books",
+            "image": "https://i0.wp.com/americanwritersmuseum.org/wp-content/uploads/2018/02/CK-3.jpg?resize=267%2C400&ssl=1",
+            "price": 15,
+            "quantity": 30,
+            "description": "F. Scott Fitzgerald's masterpiece exploring the decadence of the Jazz Age ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 1015,
+      "date": "2024-05-29T00:21:33.522Z",
+      "user": {
+        "id": "3",
+        "firstName": "bilal",
+        "lastName": "khalifi",
+        "email": "bilal@email.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "USER",
+        "password": "12345",
+        "phoneNumber": "0617478157",
+        "adresse": {
+          "street": "Rue Massira NR 14",
+          "city": "Casablanca",
+          "state": "Tanger-Tetouan-Houceima",
+          "postalCode": "92150",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "KSAR EL KEBIR HAY MARCHE VERTE RUE JEDDA NR 14",
+        "city": "KSAR EL KEBIR",
+        "state": "Tangier",
+        "postalCode": "99350",
+        "country": "Morocco"
+      }
     }
   ]
 }
