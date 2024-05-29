@@ -35,7 +35,7 @@ export class CartComponent implements OnInit{
     this.toastr.success('Your Command Successfully Saved!', 'Success'); // Show a success notification
   }
   showWarning() {
-    this.toastr.success('You should select some product!', 'Success'); // Show a success notification
+    this.toastr.warning('You should select some product!', 'warning'); // Show a success notification
   }
   showError() {
     this.toastr.error('Try Again!', 'Error'); // Show a success notification

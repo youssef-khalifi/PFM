@@ -4,6 +4,7 @@ import {Observable} from "rxjs";
 import {Product} from "../entities/Product";
 import {Cart} from "../entities/Cart";
 import {CartItem} from "../entities/CartItem";
+import {dateTimestampProvider} from "rxjs/internal/scheduler/dateTimestampProvider";
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +23,7 @@ export class CartService {
   }
 
   public saveCart(cart : Cart) : Observable<Cart>{
+    cart.date = new Date().toISOString();
     return this.http.post<Cart>(this.baseUrl , cart);
   }
   public addToCart(p : Product){
