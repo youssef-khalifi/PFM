@@ -5,16 +5,19 @@ import {Product} from "../entities/Product";
 import {Cart} from "../entities/Cart";
 import {CartItem} from "../entities/CartItem";
 import {dateTimestampProvider} from "rxjs/internal/scheduler/dateTimestampProvider";
+import {ProductService} from "./product.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
 
+  private productsEndpoint = '/products';
+  private baseUrl2 = 'http://localhost:3000';
   private baseUrl = 'http://localhost:3000/carts'; // Assuming your backend runs on localhost:8080
 
   cart :  Cart ;
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,private service : ProductService) {
     this.cart = new Cart();
     this.cart.date = Date.now().toString()
   }
@@ -23,8 +26,19 @@ export class CartService {
   }
 
   public saveCart(cart : Cart) : Observable<Cart>{
+    cart.cartItems.forEach((item) => {
+      item.product.quantity-= item.quantity
+      this.service.updateProduct(item.product)
+        .subscribe(
+          (data)=>{
+            console.log(data)
+          }
+        );
+    });
+
     return this.http.post<Cart>(this.baseUrl , cart);
   }
+
   public addToCart(p : Product){
 
     let elem : CartItem | undefined = this.cart.cartItems

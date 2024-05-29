@@ -16,7 +16,7 @@
       "category": "Electronics",
       "image": "https://www.marjanemall.ma/media/catalog/product/cache/36c9d346b6653f95ce7222f403adb694/t/2/t2_9_6_4_1_700x700_sam8806094019964_rw_sm-s901eidgmwd-samsung-s22-6-1-8-256gb-pink-gol.jpg",
       "price": 9500,
-      "quantity": 80,
+      "quantity": 70,
       "description": "The latest Samsung Galaxy S22 with ...",
       "dateTime": "2024-05-13T12:00:00.000Z"
     },
@@ -36,9 +36,10 @@
       "category": "Electronics",
       "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/m/a/macbook-pro-2020-m1-gris-sideral-uno-maroc1_1.jpg",
       "price": 2000,
-      "quantity": 30,
+      "quantity": 28,
       "description": "Powerful performance packed in sleek design ...",
-      "dateTime": "2024-05-13T12:00:00.000Z"
+      "dateTime": "2024-05-13T12:00:00.000Z",
+      "quantityChange": -2
     },
     {
       "id": "5",
@@ -199,6 +200,17 @@
       "quantity": 60,
       "description": "J.K. Rowling's enchanting tale of a young wizard's journey into the magical world of Hogwarts ...",
       "dateTime": "2024-05-13"
+    },
+    {
+      "id": "a650",
+      "name": "test",
+      "price": 9500,
+      "image": "https://th.bing.com/th/id/OIG3.5u5ZBGkvLQn1ELp4UqXH",
+      "description": "qdqdq",
+      "dateTime": "2024-05-11",
+      "category": "Hobbies",
+      "quantity": 2,
+      "quantityChange": -1
     }
   ],
   "users": [
@@ -881,6 +893,400 @@
         "state": "Tangier",
         "postalCode": "99350",
         "country": "Morocco"
+      }
+    },
+    {
+      "id": "4c38",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "a650",
+            "name": "test",
+            "price": 9500,
+            "image": "https://th.bing.com/th/id/OIG3.5u5ZBGkvLQn1ELp4UqXH",
+            "description": "qdqdq",
+            "dateTime": "2024-05-11",
+            "category": "Hobbies",
+            "quantity": 1
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 19000,
+      "date": "2024-05-29T00:36:20.848Z",
+      "user": {
+        "id": "2",
+        "firstName": "admin",
+        "lastName": "admin",
+        "email": "admin@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "ADMIN",
+        "password": "password",
+        "phoneNumber": "0658930201",
+        "adresse": {
+          "street": "Hassan Rue Mohamadia",
+          "city": "Rabat",
+          "state": "Rabat-Kenitra",
+          "postalCode": "67890",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "Hassan Rue Mohamadia",
+        "city": "Rabat",
+        "state": "Rabat-Kenitra",
+        "postalCode": "67890",
+        "country": "Maroc"
+      }
+    },
+    {
+      "id": "4fb7",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "a650",
+            "name": "test",
+            "price": 9500,
+            "image": "https://th.bing.com/th/id/OIG3.5u5ZBGkvLQn1ELp4UqXH",
+            "description": "qdqdq",
+            "dateTime": "2024-05-11",
+            "category": "Hobbies",
+            "quantity": 2
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 9500,
+      "date": "2024-05-29T00:38:11.552Z",
+      "user": {
+        "id": "2",
+        "firstName": "admin",
+        "lastName": "admin",
+        "email": "admin@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "ADMIN",
+        "password": "password",
+        "phoneNumber": "0658930201",
+        "adresse": {
+          "street": "Hassan Rue Mohamadia",
+          "city": "Rabat",
+          "state": "Rabat-Kenitra",
+          "postalCode": "67890",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "Hassan Rue Mohamadia",
+        "city": "Rabat",
+        "state": "Rabat-Kenitra",
+        "postalCode": "67890",
+        "country": "Maroc"
+      }
+    },
+    {
+      "id": "1677",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "a650",
+            "name": "test",
+            "price": 9500,
+            "image": "https://th.bing.com/th/id/OIG3.5u5ZBGkvLQn1ELp4UqXH",
+            "description": "qdqdq",
+            "dateTime": "2024-05-11",
+            "category": "Hobbies",
+            "quantity": 2
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 9500,
+      "date": "2024-05-29T00:40:40.745Z",
+      "user": {
+        "id": "2",
+        "firstName": "admin",
+        "lastName": "admin",
+        "email": "admin@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "ADMIN",
+        "password": "password",
+        "phoneNumber": "0658930201",
+        "adresse": {
+          "street": "Hassan Rue Mohamadia",
+          "city": "Rabat",
+          "state": "Rabat-Kenitra",
+          "postalCode": "67890",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "Hassan Rue Mohamadia",
+        "city": "Rabat",
+        "state": "Rabat-Kenitra",
+        "postalCode": "67890",
+        "country": "Maroc"
+      }
+    },
+    {
+      "id": "5b22",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "a650",
+            "name": "test",
+            "price": 9500,
+            "image": "https://th.bing.com/th/id/OIG3.5u5ZBGkvLQn1ELp4UqXH",
+            "description": "qdqdq",
+            "dateTime": "2024-05-11",
+            "category": "Hobbies",
+            "quantity": 3
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 9500,
+      "date": "2024-05-29T00:44:29.367Z",
+      "user": {
+        "id": "2",
+        "firstName": "admin",
+        "lastName": "admin",
+        "email": "admin@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "ADMIN",
+        "password": "password",
+        "phoneNumber": "0658930201",
+        "adresse": {
+          "street": "Hassan Rue Mohamadia",
+          "city": "Rabat",
+          "state": "Rabat-Kenitra",
+          "postalCode": "67890",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "Hassan Rue Mohamadia",
+        "city": "Rabat",
+        "state": "Rabat-Kenitra",
+        "postalCode": "67890",
+        "country": "Maroc"
+      }
+    },
+    {
+      "id": "7f80",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "4",
+            "name": "MacBook Pro",
+            "category": "Electronics",
+            "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/m/a/macbook-pro-2020-m1-gris-sideral-uno-maroc1_1.jpg",
+            "price": 2000,
+            "quantity": 30,
+            "description": "Powerful performance packed in sleek design ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 4000,
+      "date": "2024-05-29T00:45:13.306Z",
+      "user": {
+        "id": "2",
+        "firstName": "admin",
+        "lastName": "admin",
+        "email": "admin@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "ADMIN",
+        "password": "password",
+        "phoneNumber": "0658930201",
+        "adresse": {
+          "street": "Hassan Rue Mohamadia",
+          "city": "Rabat",
+          "state": "Rabat-Kenitra",
+          "postalCode": "67890",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "Hassan Rue Mohamadia",
+        "city": "Rabat",
+        "state": "Rabat-Kenitra",
+        "postalCode": "67890",
+        "country": "Maroc"
+      }
+    },
+    {
+      "id": "a524",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "a650",
+            "name": "test",
+            "price": 9500,
+            "image": "https://th.bing.com/th/id/OIG3.5u5ZBGkvLQn1ELp4UqXH",
+            "description": "qdqdq",
+            "dateTime": "2024-05-11",
+            "category": "Hobbies",
+            "quantity": 3,
+            "quantityChange": -1
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 9500,
+      "date": "2024-05-29T00:48:27.509Z",
+      "user": {
+        "id": "2",
+        "firstName": "admin",
+        "lastName": "admin",
+        "email": "admin@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "ADMIN",
+        "password": "password",
+        "phoneNumber": "0658930201",
+        "adresse": {
+          "street": "Hassan Rue Mohamadia",
+          "city": "Rabat",
+          "state": "Rabat-Kenitra",
+          "postalCode": "67890",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "Hassan Rue Mohamadia",
+        "city": "Rabat",
+        "state": "Rabat-Kenitra",
+        "postalCode": "67890",
+        "country": "Maroc"
+      }
+    },
+    {
+      "id": "c740",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "a650",
+            "name": "test",
+            "price": 9500,
+            "image": "https://th.bing.com/th/id/OIG3.5u5ZBGkvLQn1ELp4UqXH",
+            "description": "qdqdq",
+            "dateTime": "2024-05-11",
+            "category": "Hobbies",
+            "quantity": 2,
+            "quantityChange": -1
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 9500,
+      "date": "2024-05-29T00:49:36.476Z",
+      "user": {
+        "id": "2",
+        "firstName": "admin",
+        "lastName": "admin",
+        "email": "admin@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "ADMIN",
+        "password": "password",
+        "phoneNumber": "0658930201",
+        "adresse": {
+          "street": "Hassan Rue Mohamadia",
+          "city": "Rabat",
+          "state": "Rabat-Kenitra",
+          "postalCode": "67890",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "Hassan Rue Mohamadia",
+        "city": "Rabat",
+        "state": "Rabat-Kenitra",
+        "postalCode": "67890",
+        "country": "Maroc"
+      }
+    },
+    {
+      "id": "c07e",
+      "cartItems": [
+        {
+          "cartItemId": 0,
+          "product": {
+            "id": "2",
+            "name": "Samsung Galaxy S22",
+            "category": "Electronics",
+            "image": "https://www.marjanemall.ma/media/catalog/product/cache/36c9d346b6653f95ce7222f403adb694/t/2/t2_9_6_4_1_700x700_sam8806094019964_rw_sm-s901eidgmwd-samsung-s22-6-1-8-256gb-pink-gol.jpg",
+            "price": 9500,
+            "quantity": 70,
+            "description": "The latest Samsung Galaxy S22 with ...",
+            "dateTime": "2024-05-13T12:00:00.000Z"
+          },
+          "cart": {
+            "cartItems": [],
+            "totalPrice": 0
+          },
+          "quantity": 10
+        }
+      ],
+      "totalPrice": 95000,
+      "date": "2024-05-29T00:50:21.044Z",
+      "user": {
+        "id": "2",
+        "firstName": "admin",
+        "lastName": "admin",
+        "email": "admin@gmail.com",
+        "image": "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png",
+        "role": "ADMIN",
+        "password": "password",
+        "phoneNumber": "0658930201",
+        "adresse": {
+          "street": "Hassan Rue Mohamadia",
+          "city": "Rabat",
+          "state": "Rabat-Kenitra",
+          "postalCode": "67890",
+          "country": "Maroc"
+        }
+      },
+      "address": {
+        "street": "Hassan Rue Mohamadia",
+        "city": "Rabat",
+        "state": "Rabat-Kenitra",
+        "postalCode": "67890",
+        "country": "Maroc"
       }
     }
   ]
